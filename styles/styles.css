@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+
+
+:root{
+    --cor-principal: #FFFFFF;
+    --cor-secundaria: #C0C0C0;
+    --cor-botao: #167BF7;
+    --cor-background: #00030C;
+    --cor-hover: #3984e0;
+    --fonte: 'Inter', sans-serif;
+    --fonte-textos-tamanho: 1rem; 
+    --fonte-titulos-tamanho: 3rem; 
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*CORPO PADRÃO DO SITE*/
+body{
+    background-color: var(--cor-background);
+    color: var(--cor-principal);
+    font-family: var(--fonte);
+    font-size: var(--fonte-textos-tamanho);
+    font-weight: 400;
+}
+
+.conteudo{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+/*FIM DO CORPO PADRÃO DO SITE*/
+
+
+/*SEÇÃO REFERENTE A PAGINA 1 DO SITE*/
+.pagina1{
+    background-image: url("../imagens/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+
+}
+
+.conteudo__caixa{
+    margin: 0 6em;
+}
+
+.pagina1__titulo{
+    font-size: 1.75rem;
+
+}
+
+
+.pagina1__img{
+    margin: 1em 0 2em 0;
+}
+
+.conteudo__botao{
+    border-radius: 8px;
+    padding: 1em;
+    font-family: var(--fonte);
+    font-size: var(--fonte-textos-tamanho);
+    text-decoration: none;
+    margin-bottom: 1em;
+    display: block;
+    background-color: var(--cor-botao);
+    color: var(--cor-principal);
+}
+
+.botao__aluraplus{
+    background: transparent;
+    border: 2px solid var(--cor-principal);
+}
+
+.pagina1__aviso{
+    font-size: 0.75rem;
+    color: var(--cor-secundaria);
+}
+/*FIM DA SEÇÃO REFERENTE A PAGINA 1 DO SITE*/
+
+/*SEÇÃO REFERENTE A PAGINA 2 DO SITE*/
+.pagina2{
+    align-items: center;
+    margin: 0 10em;
+}
+
+.conteudo__img{
+    width: 80%;
+}
+
+.conteudo__subtitulo{
+    font-weight: 700;
+    font-size: var(--fonte-titulos-tamanho);
+    color: var(--cor-principal);
+    margin-bottom: 0.2em;
+}
+
+.conteudo__texto{
+    color: var(--cor-secundaria);
+}
+
+/*FIM SEÇÃO REFERENTE A PAGINA 2 DO SITE*/
+
+
+/*SEÇÃO REFERENTE A PAGINA 3 DO SITE*/
+
+.pagina3{
+    align-items: center;
+    margin: 0 10em;
+}
+
+.pagina3__botao{
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.conteudo__textos{
+    padding: 2em;
+}
+
+/*FIM SEÇÃO REFERENTE A PAGINA 3 DO SITE*/
+
+/*SEÇÃO REFERENTE A PAGINA 4 DO SITE*/
+
+.pagina4{
+    align-items: center;
+    margin: 0 10em;
+}
+
+
+
+/*FIM SEÇÃO REFERENTE A PAGINA 4 DO SITE*/
+
+/*SEÇÃO REFERENTE A PAGINA 5 DO SITE - DISPOSITIVOS*/
+
+.dispositivos{
+    text-align: center;
+    height: 100vh;
+}
+
+
+.dispositivos__subtitulo{
+    font-size: 3rem;
+    color: var(--cor-principal);
+}
+
+
+.dispositivos__lista{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    color: var(--cor-principal);
+    margin: 5em 0;
+}
+
+.lista__item{
+    font-size: 2rem;
+    color: var(--cor-principal);
+}
+
+/*FIM SEÇÃO REFERENTE A PAGINA 5 DO SITE - DISPOSITIVOS*/
+
+
+/*RODAPE*/
+.rodape{
+    text-align: center;
+    margin: 2em;
+    font-family: var(--fonte);
+}
+
+.rodape__lista{
+    display: flex;
+    justify-content: space-around;
+    margin: 2em 0;
+}
+
+.lista__link, .lista__link__texto{
+    font-size: var(--fonte-textos-tamanho);
+    color: var(--cor-principal);
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
+.lista__link__texto:hover{
+    color: var(--cor-botao);
+}
+
+.lista__link__texto:active{
+    color: purple;
+}
+
+
+.rodape__texto{
+    margin-bottom: 2em;
+    font-size: 0.75rem;
+    color: var(--cor-secundaria);
+}
+
+.conteudo__botao:hover{
+    background-color:var(--cor-hover);
+    color: var(--cor-background);
+}
+
+.botao__aluraplus:hover{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-background);
+}
+
+
